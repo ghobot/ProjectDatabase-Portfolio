@@ -19,12 +19,21 @@
     <script type="text/javascript">
 
 $(function() {
-			$('ul.hover_block li').hover(function(){
+			/*
+$('ul.hover_block li').hover(function(){
 				$(this).find('img').animate({top:'182px'},{queue:false,duration:250});
 			}, function(){
 				$(this).find('img').animate({top:'4px'},{queue:false,duration:400});
 			});
-		});        
+*/
+		$('ul.hover_block li').hover(function(){
+			console.log("hoverrrrrrrrr");
+				$(this).find('.abstract').animate({marginTop: '0px'},250, 'swing', function(){ });},
+		 function(){
+				$(this).find('.abstract').animate({marginTop:'200px'},250, 'swing', function(){ });
+			});
+	});
+		        
     
     </script>    
     <style type="text/css">
@@ -82,16 +91,14 @@ $(function() {
 		ul.hover_block li {
 			list-style:none;
 			float:left;
-			padding: 4px;
-			background: #fff;
-			width:220px; 
 			position: relative;
-			margin: 10px; 
-			-webkit-border-radius: 4px;
-			-moz-border-radius: 4px;
+			margin: 15px; 
+			-webkit-border-radius: 10px;
+			-moz-border-radius: 10px;
 			border-radius: 10px;
 			background: url(http://static.tumblr.com/ts2nqrf/fGxl8du40/texture.png) top left repeat;
-			background-color: #fff;
+			border:none;
+			padding:4px;
 			}
 
 		ul.hover_block li a {
@@ -117,7 +124,7 @@ $(function() {
 		}
 		
 		#maingrid a {
-		padding: 4px;
+		padding: 0px;
 		margin: 0px;
 		
 		}
@@ -130,11 +137,41 @@ $(function() {
 		.thumbnail {
 		
 		width:100%;
-		
 		overflow: hidden;
 		
 		}
-
+		
+		.rounded {
+    	-webkit-border-radius: 10px;
+    	-moz-border-radius: 10px;
+    	border-radius: 10px;
+    	display: block;
+		}
+		.rounded img { opacity: 0; }
+		
+		.one .two .three .four .five .six .seven .eight .nine .ten{
+		background-image: url('{:visual:}');
+		background-size: 100%;
+		width: 210px;
+		overflow: hidden;
+	
+		}
+		
+		.one p {
+		color:white;
+		
+		}
+				    	
+    	.abstract {
+    	
+    	width: 100%;
+    	height: 100%;
+    	background-color: rgba(0,0,0,.75);
+    	overflow: hidden;
+    	padding: 0;
+    	margin-top: 200px;
+    	color: #fff;
+    	}
     	
     </style><!-- Le fav and touch icons -->
     <link rel="shortcut icon" href="images/favicon.ico">
@@ -150,7 +187,7 @@ $(function() {
                 <div id="header-top">
                     <div class="_topbar-inner">
                         <div class="container-fluid">
-                            <h1 class="bebas" href="#">Greg Dorsainville</h1>
+                            <h1 class="bebas" href="#">{:Name:}</h1>
 
                             <ul class="nav" style="float:right;">
                                 <li class="active"><a href="portfolio.html">Home</a></li>
@@ -187,30 +224,32 @@ $(function() {
             <div class="hero-unit">
                 <ul class="media-grid hover_block" id="maingrid">
 					<li>
+					<div class="one rounded">
 						<a href="single_post.html">
-							<img class="thumbnail" src="images/ar_01.jpg" alt="" /><p class="abstract">click this one</p>
+						<div class="abstract rounded"><p>{:abstract:} </p></div>
 						</a>
+					</div>
 					</li>
 
-                    <li><a href="#"><img class="thumbnail" src="images/ew_4.jpg" alt="" /><p>this is a test</p></a></li>
+                    <li><a href="#"><img class="thumbnail two" src="images/ew_4.jpg" alt="" /><p>{:abstract:}</p></a></li>
 
-                    <li><a href="#"><img class="thumbnail" src="images/ew_3.jpg" alt="" /><p>ABSTRACT</p></a></li>
+                    <li><a href="#"><img class="thumbnail three" src="images/ew_3.jpg" alt="" /><p>{:abstract:}</p></a></li>
 
-                    <li><a href="#"><img class="thumbnail" src="images/ew_8.jpg" alt="" /><p>ABSTRACT</p></a></li>
+                    <li><a href="#"><img class="thumbnail four" src="images/ew_8.jpg" alt="" /><p>{:abstract:}</p></a></li>
 
-                    <li><a href="#"><img class="thumbnail" src="images/ew_9.jpg" alt="" /><p>ABSTRACT</p></a></li>
+                    <li><a href="#"><img class="thumbnail five" src="images/ew_9.jpg" alt="" /><p>{:abstract:}</p></a></li>
 
-                    <li><a href="#"><img class="thumbnail" src="images/ew_10.jpg" alt="" /><p>ABSTRACT</p></a></li>
+                    <li><a href="#"><img class="thumbnail six" src="images/ew_10.jpg" alt="" /><p>{:abstract:}</p></a></li>
 
-                    <li><a href="#"><img class="thumbnail" src="images/ew_5.jpg" alt="" /><p>ABSTRACT</p></a></li>
+                    <li><a href="#"><img class="thumbnail seven" src="images/ew_5.jpg" alt="" /><p>{:abstract:}</p></a></li>
 
                     <li><a href="#">
                     <video controls class="thumbnail"> 
                     	<source src='http://reallysmallears.com/vatow/video/cosby1.mp4' type='video/mp4'></source>
                     	<source src='http://reallysmallears.com/vatow/video/cosby1.ogv' type='video/ogg' codecs="theora, vorbis"></source>
-					</video><p>ABSTRACT</p></a></li>
+					</video><p>{:abstract:}</p></a></li>
 
-                    <li><a href="#"><img class="thumbnail" src="http://placehold.it/210x150" alt="" /><p>ABSTRACT</p></a></li>
+                    <li><a href="#"><img class="thumbnail" src="http://placehold.it/210x150" alt="" /><p>{:abstract:}</p></a></li>
                 </ul>
 
                 

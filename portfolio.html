@@ -11,23 +11,19 @@
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
     <!-- Le styles -->
-    <link href="css/twitter-bootstrap-296fad3/bootstrap_edit.css" rel="stylesheet" type="text/css">
+    <link href="css/twitter-bootstrap-296fad3/bootstrap_edit.css" rel="stylesheet" type="text/css">    
     <link rel="stylesheet" type="text/css" href="http://static.tumblr.com/ts2nqrf/qe1lq3uho/bebas.css">
+    <link href="css/portfolio.css" rel="stylesheet" type="text/css">
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.js" type="text/javascript"></script>
     
     <script type="text/javascript">
+/* this jquery script runs the mouseover/hover animation of the thumbnails */
 
-$(function() {
-			/*
-$('ul.hover_block li').hover(function(){
-				$(this).find('img').animate({top:'182px'},{queue:false,duration:250});
-			}, function(){
-				$(this).find('img').animate({top:'4px'},{queue:false,duration:400});
-			});
-*/
+	$(function() {
+
 		$('ul.hover_block li').hover(function(){
-			console.log("hoverrrrrrrrr");
+			/* console.log("hoverrrrrrrrr"); */
 				$(this).find('.abstract').animate({marginTop: '0px'},250, 'swing', function(){ });},
 		 function(){
 				$(this).find('.abstract').animate({marginTop:'200px'},250, 'swing', function(){ });
@@ -35,149 +31,27 @@ $('ul.hover_block li').hover(function(){
 	});
 		        
     
-    </script>    
-    <style type="text/css">
-	body {
-        padding-top: 60px;
-      }
-      
-     .topbar #header { 
-     overflow: hidden
-     }
-    #header-pat { 
-    background: url(http://static.tumblr.com/ts2nqrf/fGxl8du40/texture.png) top left repeat
-    }
+    </script>
+        
+	<style type="text/css">
+    
+/* this style rule is included here because it contains an portfolio dynamic element tag */
+    .thumbnail {
+	background-image:url({:visual:});
+	background-size:100%;
+	width:210px;
+	overflow:hidden
+	}
 
-    #footer { background-color: #1DCAC0; }
-            #header { background-color: #1DCAC0; }
-            #post a { color: #C10000;}
-            #description a { color: #C10000;}
-            .name { color: #C10000;}
-            .answertags { color: #C10000;}
-            .post-color { background-color: #C10000; }
-            blockquote { border-color: #C10000; }
-            .tagshowing { color: #C10000;}
-            h3 a:hover {color: #C10000;}
-    #header-top {
-        padding: 120px 0 0 120px;
-        position: relative;
-        width: 820px;
-    }
-
-    #header-top h1 { 
-    margin-bottom: -13px;
-    }
-
-
-    .bebas, h1, h2, h3, h4, h5, h6 { font-family: 'BebasNeueRegular'; font-weight: normal}
-
-    h1 {
-    color: white;
-    font-weight: normal;
-    font-size: 64px;
-    margin-bottom: 0;
-    max-width: 830px;
-    }
-
-    .sidebar li {
-        width: 51px;
-        height: 51px;
-
-    }
-
-
-        ul.hover_block { display: block; overflow: hidden; height: 1%; padding-bottom: 15px; }
-			
-		ul.hover_block li {
-			list-style:none;
-			float:left;
-			position: relative;
-			margin: 15px; 
-			-webkit-border-radius: 10px;
-			-moz-border-radius: 10px;
-			border-radius: 10px;
-			background: url(http://static.tumblr.com/ts2nqrf/fGxl8du40/texture.png) top left repeat;
-			border:none;
-			padding:4px;
-			}
-
-		ul.hover_block li a {
-			display: block;
-			position: relative;
-			overflow: hidden;
-			height: 150px;
-			width: 210px;
-			color: #000;
-			font: 1.1em/1.1em Helvetica, Arial, sans-serif;
-			padding: 16px;
-			
-		}
-
-		ul.hover_block li a{ 
-		text-decoration: none; 
-		}
-
-		ul.hover_block li img{
-			position: absolute;
-			
-			border: 0;
-		}
-		
-		#maingrid a {
-		padding: 0px;
-		margin: 0px;
-		
-		}
-		
-		#maingrid p {
-		padding:2px 6px 2px 6px;
-		font-style: italic;
-		}
-		
-		.thumbnail {
-		
-		width:100%;
-		overflow: hidden;
-		
-		}
-		
-		.rounded {
-    	-webkit-border-radius: 10px;
-    	-moz-border-radius: 10px;
-    	border-radius: 10px;
-    	display: block;
-		}
-		.rounded img { opacity: 0; }
-		
-		.one .two .three .four .five .six .seven .eight .nine .ten{
-		background-image: url('{:visual:}');
-		background-size: 100%;
-		width: 210px;
-		overflow: hidden;
-	
-		}
-		
-		.one p {
-		color:white;
-		
-		}
-				    	
-    	.abstract {
-    	
-    	width: 100%;
-    	height: 100%;
-    	background-color: rgba(0,0,0,.75);
-    	overflow: hidden;
-    	padding: 0;
-    	margin-top: 200px;
-    	color: #fff;
-    	}
-    	
-    </style><!-- Le fav and touch icons -->
+    </style>
+    
+    
+<!-- Le fav and touch icons -->
     <link rel="shortcut icon" href="images/favicon.ico">
     <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
     <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
     <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+
 </head>
 
 <body>
@@ -224,32 +98,12 @@ $('ul.hover_block li').hover(function(){
             <div class="hero-unit">
                 <ul class="media-grid hover_block" id="maingrid">
 					<li>
-					<div class="one rounded">
+					<div class="thumbnail rounded">
 						<a href="single_post.html">
-						<div class="abstract rounded"><p>{:abstract:} </p></div>
+						<div class="abstract rounded"><p>{:abstract:}</p></div>
 						</a>
 					</div>
 					</li>
-
-                    <li><a href="#"><img class="thumbnail two" src="images/ew_4.jpg" alt="" /><p>{:abstract:}</p></a></li>
-
-                    <li><a href="#"><img class="thumbnail three" src="images/ew_3.jpg" alt="" /><p>{:abstract:}</p></a></li>
-
-                    <li><a href="#"><img class="thumbnail four" src="images/ew_8.jpg" alt="" /><p>{:abstract:}</p></a></li>
-
-                    <li><a href="#"><img class="thumbnail five" src="images/ew_9.jpg" alt="" /><p>{:abstract:}</p></a></li>
-
-                    <li><a href="#"><img class="thumbnail six" src="images/ew_10.jpg" alt="" /><p>{:abstract:}</p></a></li>
-
-                    <li><a href="#"><img class="thumbnail seven" src="images/ew_5.jpg" alt="" /><p>{:abstract:}</p></a></li>
-
-                    <li><a href="#">
-                    <video controls class="thumbnail"> 
-                    	<source src='http://reallysmallears.com/vatow/video/cosby1.mp4' type='video/mp4'></source>
-                    	<source src='http://reallysmallears.com/vatow/video/cosby1.ogv' type='video/ogg' codecs="theora, vorbis"></source>
-					</video><p>{:abstract:}</p></a></li>
-
-                    <li><a href="#"><img class="thumbnail" src="http://placehold.it/210x150" alt="" /><p>{:abstract:}</p></a></li>
                 </ul>
 
                 

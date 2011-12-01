@@ -1,0 +1,166 @@
+body {
+	padding-top:60px
+}
+
+.topbar #header {
+	overflow:hidden
+}
+
+#header-pat {
+	background:url(images/texture.png) top left repeat
+}
+
+#footer {
+	background-color:#1DCAC0
+}
+
+#header {
+	background-color:#1DCAC0
+}
+
+#post a {
+	color:#C10000
+}
+
+#description a {
+	color:#C10000
+}
+
+.name {
+	color:#C10000
+}
+
+.answertags {
+	color:#C10000
+}
+
+.post-color {
+	background-color:#C10000
+}
+
+blockquote {
+	border-color:#C10000
+}
+
+.tagshowing {
+	color:#C10000
+}
+
+h3 a:hover {
+	color:#C10000
+}
+
+#header-top {
+	padding:120px 0 0 120px;
+	position:relative;
+	width:820px
+}
+
+#header-top h1 {
+	margin-bottom:-13px
+}
+
+.bebas,h1,h2,h3,h4,h5,h6 {
+	font-family:BebasNeueRegular;
+	font-weight:400
+}
+
+h1 {
+	color:#fff;
+	font-weight:400;
+	font-size:64px;
+	margin-bottom:0;
+	max-width:830px
+}
+
+.sidebar li {
+	width:51px;
+	height:51px
+}
+
+ul.hover_block {
+	display:block;
+	overflow:hidden;
+	height:1%;
+	padding-bottom:15px
+}
+
+ul.hover_block li {
+	list-style:none;
+	float:left;
+	position:relative;
+	margin:15px;
+	-webkit-border-radius:10px;
+	-moz-border-radius:10px;
+	border-radius:10px;
+	background:url(images/texture.png) top left repeat;
+	border:none;
+	padding:4px
+}
+
+ul.hover_block li a {
+	display:block;
+	position:relative;
+	overflow:hidden;
+	height:150px;
+	width:210px;
+	color:#000;
+	font:1.1em/1.1em Helvetica,Arial,sans-serif;
+	padding:16px
+}
+
+ul.hover_block li a {
+	text-decoration:none
+}
+
+ul.hover_block li img {
+	position:absolute;
+	border:0
+}
+
+#maingrid a {
+	padding:0;
+	margin:0
+}
+
+#maingrid p {
+	padding:2px 6px;
+	font-style:italic
+}
+
+.thumbnail {
+	width:100%;
+	overflow:hidden
+}
+
+.rounded {
+	-webkit-border-radius:10px;
+	-moz-border-radius:10px;
+	border-radius:10px;
+	display:block
+}
+
+.rounded img {
+	opacity:0
+}
+
+.thumbnail {
+	background-image:url({:visual:});
+	background-size:100%;
+	width:210px;
+	overflow:hidden
+}
+
+.thumbnail p {
+	color:#fff
+}
+
+.abstract {
+	width:100%;
+	height:100%;
+	background-color:rgba(0,0,0,.75);
+	overflow:hidden;
+	padding:0;
+	margin-top:200px;
+	color:#fff
+}

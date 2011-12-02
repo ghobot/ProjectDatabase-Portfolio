@@ -144,12 +144,6 @@ ul.hover_block li img {
 	opacity:0
 }
 
-.thumbnail {
-	background-image:url({:visual:});
-	background-size:100%;
-	width:210px;
-	overflow:hidden
-}
 
 .thumbnail p {
 	color:#fff

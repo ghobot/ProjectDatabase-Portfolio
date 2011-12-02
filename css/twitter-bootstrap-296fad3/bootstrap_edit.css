@@ -2481,7 +2481,7 @@ margin: 10px;
 	transition: all .5s ease-out;
 	
   border-color: #0069d6;
-  -webkit-box-shadow: 0 1px 4px rgba(0, 105, 214, 0.25);
-  -moz-box-shadow: 0 1px 4px rgba(0, 105, 214, 0.25);
-  box-shadow: 0 1px 4px rgba(0, 105, 214, 0.25);
+  -webkit-box-shadow: 0 1px 4px rgba(0, 105, 214, 0.5);
+  -moz-box-shadow: 0 1px 4px rgba(0, 105, 214, 0.5);
+  box-shadow: 0 1px 4px rgba(0, 105, 214, 0.5);
 }

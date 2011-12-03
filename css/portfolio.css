@@ -7,7 +7,7 @@ body {
 }
 
 #header-pat {
-	background:url(images/texture.png) top left repeat
+	background:url('../images/texture.png') top left repeat
 }
 
 #footer {
@@ -93,9 +93,10 @@ ul.hover_block li {
 	-webkit-border-radius:10px;
 	-moz-border-radius:10px;
 	border-radius:10px;
-	background:url(images/texture.png) top left repeat;
+	background:url('../images/texture.png') top left repeat;
 	border:none;
 	padding:4px
+
 }
 
 ul.hover_block li a {

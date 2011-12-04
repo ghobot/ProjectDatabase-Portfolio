@@ -1437,8 +1437,13 @@ table .headerSortUp.purple, table .headerSortDown.purple {
   text-decoration: none;
 }
 .topbar div > ul a:hover, .nav a:hover {
-  color: #ffffff;
+  color: #E8117f;
   text-decoration: none;
+  transition: all 0.5s;
+-moz-transition: all 0.5s; 
+-webkit-transition: all 0.5s;
+-o-transition: all 0.5s; 
+  
 }
 .topbar div > ul .active > a, .nav .active > a {
   background-color: #222;

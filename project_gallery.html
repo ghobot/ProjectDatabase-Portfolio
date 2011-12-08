@@ -1,0 +1,416 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN" "http://www.w3.org/TR/html4/frameset.dtd">
+
+<html>
+	<head>
+		<title></title>
+
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+
+    <title>Project Portfolio</title>
+    <meta name="description" content="">
+    <meta name="author" content=""><!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!-- Le styles -->
+    <link type="text/css" rel="stylesheet" href="css/twitter-bootstrap/bootstrap_edit.css">    
+    <link type="text/css" rel="stylesheet" href="css/bebas.css">
+    <link type="text/css" rel="stylesheet" href="css/portfolio.css">
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.js"></script>
+    <script type="text/javascript" src="css/twitter-bootstrap/js/bootstrap-dropdown.js"></script>
+
+
+<script type="text/javascript">    
+/* this jquery script runs the mouseover/hover animation of the thumbnails */
+
+	$(function() {
+		$('ul.hover_block li').hover(function(){
+			
+				$(this).find('.abstract').animate({ opacity: 0.9 , marginTop: '0px', }, 600, 'easeOutBounce', function(){ });},
+		 function(){
+				$(this).find('.abstract').animate({ opacity: 0, marginTop:'200px' }, 300, 'swing', function(){ });
+			});
+			 $('.one').delay(2000, function(){
+			 $(this).animate({ marginTop: '0px', }, 2000, 'swing', function(){ });},
+		 	function(){ $(this).animate({marginTop: '1000px' }, 2000, 'easeOutBounce', function(){ });			 
+			 }); 
+			});	
+    </script>
+        
+<style type="text/css">
+
+#header {
+background-color: green;
+height:55px;
+}
+
+#header-pat{
+height:100%;
+}
+
+body{
+background-color: black;
+
+}
+
+#main_title{
+padding: 10px 0 0 5px;
+
+}
+
+nav{
+border-width: thick;
+border-radius: 10px;
+
+
+}
+
+
+
+.nav li a{
+
+color:black;
+padding-right:0;
+font-size: 1.9em;
+}
+
+.nav li a:hover{
+color:red;
+}
+
+
+.container{
+width:auto;
+
+}
+.circle-top {
+margin-top:20px; 
+padding:0;
+display: block;
+width: 80px;
+height: 80px;
+-moz-border-radius: 40px;
+-webkit-border-radius: 40px;
+float: right;
+opacity:.5;
+background-image: url('images/texture.png');
+}
+
+.circle{
+display: block;
+width: 80px;
+height: 80px;
+background: red;
+-moz-border-radius: 40px;
+-webkit-border-radius: 40px;
+float: right;
+opacity:.5;
+background-image: url('images/texture.png');
+}
+
+.circle:hover, .circle-top:hover{
+
+opacity:100;
+-webkit-transition: all 0.3s  ease-out;
+-moz-transition: all 0.3s ease-out;
+-o-transition: all 0.3s ease-out;
+-ms-transition: all 0.3s ease-out;
+transition: all 0.3s ease-out;
+}
+
+.circle h2, .circle-top h2{
+margin: 20px 80px 0px 10px;
+border-radius: 0;
+font-size: 3em;
+color:white;
+
+}
+
+
+
+ul.circle_list {
+list-style: disc;
+float: right;
+display: block;
+margin: 2px 20px 3px 0px;
+}
+
+.circle_list li {
+display: inline;
+
+}
+
+
+.media-grid a {
+
+border:none;
+margin: 0;
+}
+
+.media-grid{
+margin: 60px 0 0 80px;
+
+
+}
+
+ul.hover_block li{
+padding:0;
+margin:2px;
+
+}
+.thumbnail{
+background-size: 100%;
+width: 240px;
+width:182;
+overflow: hidden;
+}
+
+
+
+
+ul.hover_block li a{
+width:240px;
+height:182px;
+overflow:hidden;
+padding:0;
+
+}
+
+
+
+.topbar div > ul a:hover, .nav a:hover {
+color:red;
+-webkit-transition: all 0.3s  ease-out;
+-moz-transition: all 0.3s ease-out;
+-o-transition: all 0.3s ease-out;
+-ms-transition: all 0.3s ease-out;
+transition: all 0.3s ease-out;
+
+}
+
+.name {
+font-size: 2em;
+color: #fff;
+font-style: italic;
+
+}
+
+.title{
+font-size: 2em;
+}
+.course {
+font-size: 1em;
+
+}
+
+.abstract p{
+
+padding-top:10px;
+}
+
+#project-search {
+
+margin-top: 30px;
+padding-right: 10px;
+height: 0px;
+
+}
+
+
+.itp_home h1:hover {
+color:red;
+-webkit-transition: all 0.3s  ease-out;
+-moz-transition: all 0.3s ease-out;
+-o-transition: all 0.3s ease-out;
+-ms-transition: all 0.3s ease-out;
+transition: all 0.3s ease-out;
+}
+
+
+.search{
+
+margin-top: 150px;
+
+}
+
+a.menu::after, .dropdown-toggle::after{
+
+border-top-color: black;
+
+}
+
+
+
+.topbar ul .menu-dropdown li a, .topbar ul .dropdown-menu li a {
+padding: 20px 15px;
+}
+
+.topbar .dropdown-menu a, .dropdown-menu a {
+display: block;
+padding: 4px 15px;
+clear: both;
+font-weight: normal;
+line-height: 18px;
+color: gray;
+text-shadow: 0 1px 0 white;
+}
+
+.topbar-wrapper {
+
+background-color:white; 
+margin-top:5px; 
+padding:0;
+height: 40px;
+overflow: visible;
+}
+
+.transparent{
+
+background-image: url('images/transparent.png') repeat left top;
+
+}
+</style>
+    
+</head>
+
+
+
+<body>
+<div class="topbar"   style="height:100px; background-color:black;" >
+<div id="header">
+            <div id="header-pat"><h1 id="main_title">THE PROJECTS GALLERY</h1>
+              </div>
+        </div>      
+        
+        <div class="topbar-wrapper"  >
+        		<div class="container">	
+        			<ul class="nav secondary-nav">
+                        <li class="dropdown" data-dropdown="dropdown">
+              				<a href="#" class="dropdown-toggle">sort by</a>
+              				<ul class="dropdown-menu"> 
+                				<li><a href="#">Artist</a></li>
+				                <li><a href="#">Title</a></li>
+                				<li><a href="#">Class</a></li>
+                			</ul>	              				
+            			</li>
+                   </ul>
+               
+                </div>
+        </div>
+</div>
+
+   <div class="span6 transparent" style="float:right;">				
+			<div class="thumbnail rounded search transparent">
+				<div style="width:240px; height:182px;">
+					<h1 style="padding: 20px 0 0 0;">SEARCH</h1>
+					<form id="project-search" action="">
+            			<input type="text" placeholder="Search for projects">
+          			</form>
+          		</div>
+			</div>
+			<ul class="circle_list" style="padding-top:60px">
+				<li><div class="circle _one"><h2>&gt;&gt;</h2></div></li>
+				<li><div class="circle _two"><h2>last</h2></div></li>
+				<li><div class="circle _three"><h2>first</h2></div></li>
+				<li><div class="circle _four"><h2>&lt;&lt;</h2></div></li>
+			</ul>                       
+        </div>
+	
+            <ul class="media-grid hover_block " > 
+
+                <h1 class="one" style="padding:10px 0 0 5px">{:view status:}</h1>
+                
+<!-- 					{:startproject:} -->
+					<li >
+					<div class="thumbnail rounded " style="background-image: url('http://placehold.it/500/eee/E8117f')">
+						<a href="">
+						<div class="abstract rounded"><p class="title">{:title:}</p><p class="name">{:name:}</p></div>
+						</a>
+					</div>
+					</li>
+
+					<li class="two">
+					<div class="thumbnail rounded" style="background-image: url('images/ew_9.jpg'); background-image-size:100%;">
+						<a href="">
+						<div class="abstract rounded"><p class="title">{:title:}</p><p class="name">{:name:}</p></div>
+						</a>
+					</div>
+					</li>					
+					
+					<li>
+					<div class="thumbnail rounded three" style="background-image: url('images/ew_8.jpg'); background-image-size:100%;">
+						<a href="">
+						<div class="abstract rounded"><p class="title">{:title:}</p><p class="name">{:name:}</p></div>
+						</a>
+					</div>
+					</li>
+					<li>
+					<div class="thumbnail rounded four" style="background-image: url('images/ew_10.jpg'); background-image-size:100%;">
+						<a href="">
+						<div class="abstract rounded"><p class="title">{:title:}</p><p class="name">{:name:}</p></div>
+						</a>
+					</div>
+					</li>
+					<li>
+					<div class="thumbnail rounded five" style="background-image: url('http://placehold.it/210/fff/E8117f'); background-image-size:100%;">
+						<a href="">
+						<div class="abstract rounded"><p class="title">{:title:}</p><p class="name">{:name:}</p></div>
+						</a>
+					</div>
+					</li>
+					<li>
+					<div class="thumbnail rounded six" style="background-image: url('http://placehold.it/900/fff/E8117f'); background-image-size:100%;">
+						<a href="">
+						<div class="abstract rounded"><p class="title">{:title:}</p><p class="name">{:name:}</p></div>
+						</a>
+					</div>
+					</li>
+					<li>
+					<div class="thumbnail rounded seven" style="background-image: url('images/ew_3.jpg'); background-image-size:100%;">
+						<a href="">
+						<div class="abstract rounded"><p class="title">{:title:}</p><p class="name">{:name:}</p></div>
+						</a>
+					</div>
+					</li>
+					<li>
+					<div class="thumbnail rounded eight" style="background-image: url('http://placehold.it/210/fff/E8117f'); background-image-size:100%;">
+						<a href="">
+						<div class="abstract rounded"><p class="title">{:title:}</p><p class="name">{:name:}</p></div>
+						</a>
+					</div>
+					</li>
+					<li>
+						<div class="thumbnail rounded nine" style="background-image: url('images/ew_4.jpg'); background-image-size:100%;">
+						<a href="">
+						<div class="abstract rounded"><p class="title">{:title:}</p><p class="name">{:name:}</p></div>
+						</a>
+						</div>
+					</li>
+					
+					<li>
+					<div class="thumbnail rounded ten" style="background-image: url('http://placehold.it/210/fff/E8117f'); background-image-size:100%;">
+						<a href="">
+						<div class="abstract rounded">
+						<p class="title">{:title:}</p><p class="name">{:name:}</p></div>
+						</a>
+					</div>
+					</li>
+					<li>
+						
+					<div class="thumbnail rounded eleven">
+						<div  style="width:240px; height:182px;">
+							<a href="http://itp.nyu.edu" class="itp_home"><h1 style="padding:20px 0 0 10px;">TISCH ITP</h1></a>
+						</div>
+					</div>
+			<!-- 					{:endproject:}					 -->
+                </ul>
+                
+                            
+        			
+    <!-- end of header -->
+	</body>
+</html>

@@ -20,7 +20,7 @@
 
 
 <script type="text/javascript">    
-/* this jquery script runs the mouseover/hover animation of the thumbnails */
+/* this script runs the mouseover/hover animation of the thumbnails */
 
 	$(function() {
 		$('ul.hover_block li').hover(function(){
@@ -33,14 +33,55 @@
 			 $(this).animate({ marginTop: '0px', }, 2000, 'swing', function(){ });},
 		 	function(){ $(this).animate({marginTop: '1000px' }, 2000, 'easeOutBounce', function(){ });			 
 			 }); 
-			});	
-    </script>
+	
+/* this script allows the textbox to fire search queries when the user presses enter in the field */			
+	$('.input').keypress(function(e){
+    	  if(e.which == 13){
+      	 $('form#login').submit();
+      	 }
+     	 });	
+    
+/* this script is for resizing of the window and mobile screens */    
+     	
+     	var windowWidth = $(window).width();
+     	
+    if (windowWidth < 641) {
+     	 $('#search_box').css('position', 'relative');
+       	 }else{
+       	 $('#search_box').css('position', 'fixed');
+       	 };
+       	 
+       	 
+
+
+    
+    if ($(window).resize()){
+     	windowWidth = $(window).width();
+     	
+    if (windowWidth < 641) {
+     	 $('#search_box').css('position', 'relative');
+       	 }else{
+       	 $('#search_box').css('position', 'fixed');
+       	 };
+
+     	
+     	};
+  			});  
+     	 
+/*
+     if() check the size of the window, if it is smaller than this, make the div relative, 
+     
+     and if the screen is resized smaller {}
+     else{ that}  	 		  
+*/  
+			    
+</script>
         
 <style type="text/css">
 
 #header {
 background-color: green;
-height:55px;
+/* height:55px; */
 }
 
 #header-pat{
@@ -53,7 +94,7 @@ background-color: black;
 }
 
 #main_title{
-padding: 10px 0 0 5px;
+padding: 10px 0 10px 5px;
 
 }
 
@@ -277,6 +318,13 @@ overflow: visible;
 background-image: url('images/transparent.png') repeat left top;
 
 }
+
+#search_box{
+position:fixed; 
+right:1%;
+
+
+}
 </style>
     
 </head>
@@ -317,32 +365,34 @@ background-image: url('images/transparent.png') repeat left top;
 
 
 <!-- search section -->
-   <div class="span6 transparent" style="float:left; position:fixed; right:1% ">				
-			<div class="rounded search">
-				<div style="height:auto;">
-					<h1 style="padding:10px 0px 0px 0px;">SEARCH</h1>
-					<form id="project-search" action="">
-            			<ul class="inputs-list">
-            				<li><input type="text" name="browseBy" placeholder="browse projects"></li>
-            				<li><label><input type="radio"><span><p style="font-size:2em;">name</p></span></label></li>
-            				<li><label><input type="radio"><span><p style="font-size:2em;">venue</p></span></label></li>
-            				<li><label><input type="radio"><span><p style="font-size:2em;">course</p></span></label></li>
-            			</ul>
-            		</form>
-          		</div>
-			</div>                       
-				<ul class="circle_list">
-					<li><div class="circle _one"><h2>&gt;&gt;</h2></div></li>
-					<li><div class="circle _two"><h2>last</h2></div></li>
-					<li><div class="circle _three"><h2>first</h2></div></li>
-					<li><div class="circle _four"><h2>&lt;&lt;</h2></div></li>
-				</ul>
-        </div>
+   <div  id="search_box" class="span6">				
+		<div class="rounded search">
+			<div style="height:auto;">
+				<h1 style="padding:10px 0px 0px 0px;">SEARCH</h1>
+				<form id="project-search" action="">
+            		<ul class="inputs-list">
+           				<li><input type="text" name="browseBy" placeholder="browse projects"></li>
+           				<li><label><input type="radio" name="name"><span><p style="font-size:2em;">name</p></span></label></li>
+           				<li><label><input type="radio" name="course"><span><p style="font-size:2em;">course</p></span></label></li>
+           				<li><label><input type="radio" name="venue"><span><p style="font-size:2em;">venue</p></span></label></li>
+           			</ul>
+           		</form>
+       		</div>
+		</div>                       
+		<ul class="circle_list">
+			<li><div class="circle _one"><h2>&gt;&gt;</h2></div></li>
+			<li><div class="circle _two"><h2>last</h2></div></li>
+			<li><div class="circle _three"><h2>first</h2></div></li>					
+			<li><div class="circle _four"><h2>&lt;&lt;</h2></div></li>
+		</ul>
+	</div>
 <!-- end search section -->	  
 
+
 <!-- project grid section -->
-        <ul class="media-grid hover_block" style="max-width:60%;"> 
-        	<h1 class="one" style="padding: 25px 30px 0 60%">{:view status:}</h1>
+<div id="gallery_grid">
+        <ul class="media-grid hover_block" style=" overflow: visible; max-width:60%;"> 
+        	<h2 class="one" style="color: white; font-size:3em ;padding: 25px 30px 0 60%">{:view status:}</h2>
 			<li>		
 				<div class="thumbnail rounded eleven">
 					<div  style="width:240px; height:182px;">
@@ -360,6 +410,7 @@ background-image: url('images/transparent.png') repeat left top;
 					</div>
 				</li>
               </ul>
+</div>         
 <!-- end project grid section -->   
 
            

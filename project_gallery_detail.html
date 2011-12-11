@@ -27,7 +27,7 @@
 <style type="text/css">
 
 #header {
-background-color: red;
+background-color: #0069d6;
 /* height:55px; */
 }
 
@@ -87,7 +87,7 @@ margin-top:10 px;
 
 .hero-unit{
 
-margin-top: 30px;
+margin-top: 0px;
 }
 
 .container-fluid > .sidebar {
@@ -97,7 +97,12 @@ margin-top:30px;
 
 .well{ 
 padding:0;
+background: url('images/texture.png'); background-color:#aaa;
 
+}
+
+.hero-unit{
+background-color: black;
 
 }
 
@@ -111,6 +116,25 @@ sidebar li{
 padding-bottom: 3px;
 
 }
+
+.hero-unit p{
+color:#aaa;
+
+}
+
+.hero-unit h2{
+color:#aaa;
+}
+
+.sidebar li {
+width: inherit;
+height: inherit;
+}
+
+ul, ol {
+margin: 2px 0 18px 15px;
+}
+
 </style>
     
 </head>
@@ -136,30 +160,25 @@ padding-bottom: 3px;
 </div>
 <!-- end of the top bar-->
 
-<h1 class="one" style="padding: 60px 0px 0 20px">{:ARTIST:}</h1>
+<h1 class="one" style="padding: 80px 20px 0 20px; max-width:100%;">{:ARTIST:}</h1>
 
  <div class="container-fluid">
-        <div class="sidebar" >
-            <div class="well" style="background-color:grey; opacity:.5;">
-                <ul>
-                    <li><a href="#"><img src="http://placehold.it/100/fff"></a></li>
-                    <li><a href="#"><img src="http://placehold.it/100/fff"></a></li>
-                    <li><a href="#"><img src="http://placehold.it/100/fff"></a></li>
-                    <li><a href="#"><img src="http://placehold.it/100/fff"></a></li>
-                </ul>
+        <div class="sidebar"  >
+            <div class="well">
+                {:media:}
             </div>
         </div>
 
         <div class="content">
             <!-- Main hero unit for a primary marketing message or call to action -->
 
-            <div class="hero-unit" style="background: url('../images/texture.png')">
-            <p style="color:white; font-size:2em;">{:title:}</p>
+            <div class="hero-unit" style="">
+            <p style="color:white; font-size:3em;">{:title:}</p>
                 <ul class="media-grid" >
                     <li><a href="#"><img class="thumbnail" src="{:visual:}" alt=""></a></li>
                 </ul>
 		
-				<h3>{:abstract:} </h3>
+				<h2>{:abstract:} </h2>
 				<p>{:description:}</p>
 				<a href="{:url:}"></a>
 				<p>{:venue:}</p>	<p>{:course:}</p>
